@@ -1,12 +1,9 @@
 .page {
-  --transition-duration: 0.25s;
-  --font-family: "IBM Plex mono"; 
   background: var(--background-image) no-repeat top center;
   background-color: var(--background-color);
   background-attachment: fixed;
   background-size: cover;
   color: var(--main-text-color);
-  transition-duration: var(--transition-duration);
   font-family: var(--font-family, 'IBM Plex Mono', monospace);
   font-size: 18px;
   line-height: 1.3;
@@ -25,6 +22,7 @@
   text-transform: uppercase;
   top: 20px;
   right: 48px;
+  display: var(--display__rec);
 }
 
 .header__rec::after {

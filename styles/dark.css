@@ -13,4 +13,5 @@
   --title-decor: var(--title-shadow);
   --link-shadow: var(--title-shadow);
   --rec-color: var(--title-shadow);
+  --display__rec: flex;
 }

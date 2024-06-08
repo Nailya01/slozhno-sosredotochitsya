@@ -13,6 +13,7 @@
     --title-decor: var(--title-shadow);
     --link-shadow: var(--title-shadow);
     --rec-color: var(--title-shadow);
+    --display__rec: flex;
   }
 }
 
@@ -29,7 +30,12 @@
     --section-title-color: var(--main-text-color);
     --border-color: var(--title-shadow);
     --corners-color: var(--main-text-color);
-    --link-shadow: var(--title-color);
+    --link-shadow: var(--title-decor);
     --rec-color: var(--background-color);
+    --display__rec: none;
   }
+}
+
+:root {
+  --font-family: "IBM Plex mono";
 }

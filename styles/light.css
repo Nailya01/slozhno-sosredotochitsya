@@ -11,10 +11,11 @@
   --section-title-color: var(--main-text-color);
   --border-color: var(--title-shadow);
   --corners-color: var(--main-text-color);
-  --link-shadow: var(--title-color);
+  --link-shadow: var(--title-decor);
   --rec-color: var(--background-color);
+  --display__rec: none;
 }
 
-.page.theme_light .header__rec {
+/**.page.theme_light .header__rec {
   display: none;
-}
+}**/
