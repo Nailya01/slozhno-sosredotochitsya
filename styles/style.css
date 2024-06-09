@@ -10,8 +10,12 @@
 }
 
 .header {
-  padding: 0 20px;
   position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  justify-items: end;
+  align-items: start;
+  padding: 0 20px;
   height: 100vh;
   min-height: 668px;
 }
@@ -96,22 +100,19 @@
 }
 
 .header__title {
-  align-self: flex-end;
+  margin-block-start: 114px;
   max-inline-size: 364px;
   color: var(--article-title-color);
   line-height: 23px;
 }
 
-.header__title-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .page-title {
+  justify-self: start;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  font-weight: 700;
   color: var(--title-color);
   text-shadow: 4px 4px 0px var(--title-shadow);
+  font-weight: 700;
+  line-height: 82.5%;
 }
 
 .main {
@@ -185,11 +186,11 @@
 }
 
 .footer {
-  padding: 282px 20px;
   position: relative;
-  text-align: center;
+  display: grid;
   height: 100vh;
   min-height: 668px;
+  line-height: 82.5%;
 }
   
 .footer-title {
@@ -197,6 +198,8 @@
   color: var(--title-color);
   text-shadow: 2px 2px 0px var(--title-shadow);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  justify-self: center;
+  align-self: center;
 }
 
 
@@ -208,8 +211,13 @@
   }
 
   @media (width < 768px) and (width >=375px) {
+
   .header {
     padding: 0 10px;
+  }
+
+  .header__title {
+    margin-block-start: 55px;
   }
 
   .header__rec {
@@ -226,16 +234,11 @@
     left: 10px;
     bottom: 10px;
   }
- 
-  .header__title-container {
-     padding: 70px 0 74px;
-     gap: 57px;
-  }
 
   .header__theme-menu {
     padding-top: 75px;
   }
- 
+    margin-block-start: 114px;
   .page-title {
      font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
      margin-left: 0;
@@ -255,13 +258,8 @@
   .gallery {
      gap: 10px;
   }
-
-  .footer {
-    margin-top: 40px;
-    padding: 262px 10px;
-  }
  
-  .footer__title {
+  .footer-title {
      font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); 
   }
 }
@@ -276,9 +274,8 @@
     margin-inline-start: -20px;
   }
 
-  .header__title-container {
-    padding: 150px 0 183px;
-    gap: 133px;
+  .header__title {
+    margin-block-start: 162px;
   }
 
   .header__theme-menu {
@@ -323,9 +320,6 @@
   .gallery-image:nth-of-type(3) {
     grid-row: span 2;
   }
-  .footer {
-    padding: 434px 20px;
-  }
 }
 
 @media (width >= 1024px) {
@@ -341,11 +335,7 @@
 
   .header__title {
     max-inline-size: 491px;
-  }
-
-  .header__title-container {
-    padding: 238px 0 136px;
-    gap: 76px;
+    margin-block-start: 114px;
   }
 
   .main__section {
@@ -361,7 +351,4 @@
     grid-template-rows: auto 260px 315px 428px;
   }
   
-  .footer {
-    padding: 282px 20px;
-  }
 }
