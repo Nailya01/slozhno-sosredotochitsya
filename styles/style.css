@@ -22,7 +22,7 @@
   text-transform: uppercase;
   top: 20px;
   right: 48px;
-  display: var(--display__rec);
+  display: var(--display-rec);
 }
 
 .header__rec::after {
@@ -140,15 +140,15 @@
   gap: 10px;
 }
 
-.title {
-  font-weight: 400;
-}
-
 .title-decor {
   color: var(--article-title-color);
   background-color: var(--title-decor);
   font-weight: 700;
   font-size: 18px;
+}
+
+.title {
+  font-weight: 400;
 }
 
 .card-text-link {
@@ -190,14 +190,14 @@
   text-align: center;
   height: 100vh;
   min-height: 668px;
-  }
+}
   
-  .footer .footer-title {
+.footer-title {
   font-weight: 700;
   color: var(--title-color);
   text-shadow: 2px 2px 0px var(--title-shadow);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
+}
 
 
   @media (width < 1024px) {
