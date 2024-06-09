@@ -149,6 +149,7 @@
   color: var(--article-title-color);
   background-color: var(--title-decor);
   font-weight: 700;
+  font-size: 18px;
 }
 
 .title {
@@ -237,7 +238,7 @@
  }
    .header__title-container {
      padding: 70px 0 74px;
-     gap: 57px;
+     gap: 55px;
  }
  .header__theme-menu {
    padding-top: 75px;
